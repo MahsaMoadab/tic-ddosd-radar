@@ -1,0 +1,30 @@
+.sidebar {
+  width: 95px;
+  background: #091028;
+  @apply text-white h-full p-4 shadow-lg pt-8 flex flex-col gap-6 items-center;
+
+  .logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  &_items {
+    @apply flex flex-col gap-4 items-center;
+  }
+
+  &_item {
+    font-size: 14px;
+    @apply flex flex-col gap-1 items-center;
+
+    svg {
+      color: #FFF;
+    }
+
+    &__active {
+      color: #78FF97;
+      svg {
+        color: #78FF97;
+      }
+    }
+  }
+}
